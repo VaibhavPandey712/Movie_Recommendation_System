@@ -1,0 +1,51 @@
+movieId,title,genres
+1,Toy Story (1995),Animation|Adventure|Comedy|Family
+2,Jumanji (1995),Adventure|Fantasy|Family
+3,Heat (1995),Action|Crime|Thriller
+4,GoldenEye (1995),Action|Adventure|Thriller
+5,The Usual Suspects (1995),Crime|Mystery|Thriller
+6,Braveheart (1995),Drama|War|History
+7,Apollo 13 (1995),Drama|Adventure|History
+8,Se7en (1995),Crime|Drama|Mystery
+9,The Lion King (1994),Animation|Adventure|Drama|Family
+10,Pulp Fiction (1994),Crime|Drama|Thriller
+11,Forrest Gump (1994),Drama|Romance|Comedy
+12,The Shawshank Redemption (1994),Drama|Crime
+13,Speed (1994),Action|Thriller
+14,True Lies (1994),Action|Comedy|Thriller
+15,Aladdin (1992),Animation|Adventure|Comedy|Family
+16,Terminator 2: Judgment Day (1991),Action|Sci-Fi|Thriller
+17,Beauty and the Beast (1991),Animation|Family|Fantasy|Romance
+18,Silence of the Lambs (1991),Crime|Drama|Thriller|Horror
+19,Home Alone (1990),Comedy|Family
+20,Dances with Wolves (1990),Adventure|Drama|Western
+21,Goodfellas (1990),Crime|Drama
+22,Die Hard 2 (1990),Action|Thriller
+23,Ghost (1990),Drama|Romance|Fantasy
+24,The Matrix (1999),Action|Sci-Fi
+25,Fight Club (1999),Drama|Thriller
+26,The Sixth Sense (1999),Drama|Mystery|Thriller
+27,Toy Story 2 (1999),Animation|Adventure|Comedy|Family
+28,American Beauty (1999),Drama
+29,Star Wars: Episode I (1999),Action|Adventure|Sci-Fi|Fantasy
+30,Gladiator (2000),Action|Adventure|Drama|History
+31,Memento (2000),Mystery|Thriller
+32,Chicken Run (2000),Animation|Adventure|Comedy|Family
+33,Cast Away (2000),Adventure|Drama
+34,Shrek (2001),Animation|Adventure|Comedy|Family|Fantasy
+35,The Lord of the Rings: The Fellowship of the Ring (2001),Adventure|Drama|Fantasy
+36,"Monsters, Inc. (2001)",Animation|Comedy|Family|Fantasy
+37,A Beautiful Mind (2001),Drama|Romance
+38,Spider-Man (2002),Action|Adventure|Sci-Fi
+39,Finding Nemo (2003),Animation|Adventure|Comedy|Family
+40,Pirates of the Caribbean: The Curse of the Black Pearl (2003),Action|Adventure|Fantasy
+41,The Lord of the Rings: The Return of the King (2003),Adventure|Drama|Fantasy
+42,Kill Bill: Vol. 1 (2003),Action|Crime|Thriller
+43,Eternal Sunshine of the Spotless Mind (2004),Drama|Romance|Sci-Fi
+44,Shrek 2 (2004),Animation|Adventure|Comedy|Family|Fantasy
+45,The Incredibles (2004),Animation|Action|Adventure|Comedy|Family
+46,Batman Begins (2005),Action|Adventure|Crime|Drama
+47,War of the Worlds (2005),Action|Adventure|Sci-Fi|Thriller
+48,Pirates of the Caribbean: Dead Man's Chest (2006),Action|Adventure|Fantasy
+49,The Departed (2006),Crime|Drama|Thriller
+50,Cars (2006),Animation|Adventure|Comedy|Family
