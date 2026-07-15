@@ -1,15 +1,4 @@
-"""
-main.py
 
-Simple command-line demo for the MovieRecommender.
-
-Usage examples:
-    python main.py --mode content --title "Toy Story"
-    python main.py --mode collaborative --user 3
-    python main.py --mode both --title "The Matrix" --user 3
-    python main.py --list-movies
-    python main.py --list-users
-"""
 
 import argparse
 

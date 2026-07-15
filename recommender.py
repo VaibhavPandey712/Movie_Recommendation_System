@@ -1,20 +1,3 @@
-"""
-recommender.py
-
-A small movie recommendation engine implementing two classic techniques:
-
-1. Content-Based Filtering
-   Recommends movies similar to a given movie by comparing genres using
-   TF-IDF vectorization + cosine similarity.
-
-2. Collaborative Filtering (User-Based)
-   Recommends movies for a given user by finding similar users (based on
-   rating patterns) and suggesting movies those similar users liked.
-
-Both techniques work off two simple CSV files:
-   data/movies.csv   -> movieId, title, genres (pipe-separated)
-   data/ratings.csv  -> userId, movieId, rating
-"""
 
 from pathlib import Path
 
@@ -37,9 +20,7 @@ class MovieRecommender:
         self._build_content_similarity()
         self._build_user_item_matrix()
 
-    # ------------------------------------------------------------------
-    # Content-Based Filtering
-    # ------------------------------------------------------------------
+   
     def _build_content_similarity(self):
         """Build a TF-IDF matrix over genres and a cosine similarity matrix."""
         genre_text = self.movies["genres"].fillna("").str.replace("|", " ", regex=False)
@@ -74,11 +55,8 @@ class MovieRecommender:
         result["similarity"] = [round(score, 3) for _, score in sim_scores]
         return result.reset_index(drop=True)
 
-    # ------------------------------------------------------------------
-    # Collaborative Filtering (User-Based)
-    # ------------------------------------------------------------------
+    
     def _build_user_item_matrix(self):
-        """Pivot ratings into a users x movies matrix (0 = not rated)."""
         self.user_item_matrix = self.ratings.pivot_table(
             index="userId", columns="movieId", values="rating"
         ).fillna(0)
@@ -93,15 +71,7 @@ class MovieRecommender:
     def collaborative_recommend(
         self, user_id: int, n: int = 5, k_neighbors: int = 5
     ) -> pd.DataFrame:
-        """
-        Recommend movies for `user_id` using user-based collaborative filtering.
-
-        Steps:
-          1. Find the k most similar users to `user_id`.
-          2. Compute a weighted average rating (weighted by similarity) for
-             every movie those neighbors have rated but `user_id` has not.
-          3. Return the top-n highest scoring movies.
-        """
+       
         if user_id not in self.user_item_matrix.index:
             raise ValueError(f"User {user_id} not found in ratings dataset.")
 
@@ -142,9 +112,7 @@ class MovieRecommender:
         result = result.sort_values("predicted_rating", ascending=False).reset_index(drop=True)
         return result
 
-    # ------------------------------------------------------------------
-    # Helpers
-    # ------------------------------------------------------------------
+    
     def get_user_top_rated(self, user_id: int, n: int = 5) -> pd.DataFrame:
         """Show a user's own highest-rated movies (useful for context)."""
         user_ratings = self.ratings[self.ratings["userId"] == user_id]

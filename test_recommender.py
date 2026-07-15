@@ -1,9 +1,4 @@
-"""
-test_recommender.py
 
-Basic sanity tests for MovieRecommender.
-Run with: python -m pytest test_recommender.py -v
-"""
 
 import pytest
 
@@ -38,7 +33,6 @@ def test_content_based_recommend_invalid_title_raises(recommender):
 
 
 def test_content_based_partial_title_match(recommender):
-    # partial / case-insensitive match should still work
     results = recommender.content_based_recommend("matrix", n=3)
     assert len(results) == 3
 
@@ -69,6 +63,5 @@ def test_get_user_top_rated(recommender):
     user_id = recommender.list_user_ids()[0]
     top = recommender.get_user_top_rated(user_id, n=3)
     assert len(top) <= 3
-    # sorted descending by rating
     ratings = top["rating"].tolist()
     assert ratings == sorted(ratings, reverse=True)
